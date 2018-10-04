@@ -25,8 +25,10 @@ if [ "$checksum" != "$tmp" ]; then
   git checkout master
   git add "$CHECKSUM"
   git commit -m "new updated images"
-  git tag -a "$(date +%Y-%m-%d)" -m "new updated images"
 
-#  git remote add origin-release "https://${GITHUB_TOKEN}@github.com/dvarum12/openwrt_custombuild" > /dev/null 2>&1
+  git remote add origin-release "https://${GITHUB_TOKEN}@github.com/dvarum12/openwrt_custombuild" > /dev/null 2>&1
+  git push --quiet --set-upstream origin-release master
+
+  git tag -a "$(date +%Y-%m-%d)" -m "new updated images"
 #  git push --quiet --set-upstream origin-release master --tags
 fi

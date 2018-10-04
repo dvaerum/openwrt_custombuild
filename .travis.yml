@@ -6,12 +6,10 @@ install:
   - sudo apt-get install -y subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc wget unzip python
 
 script:
-  - ./build.sh
+  - bash -x ./build.sh
   
 deploy:
   provider: releases
-  #github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  #local-dir: "images/"
   api_key:
     secure: $GITHUB_TOKEN
   file_glob: true
@@ -19,4 +17,4 @@ deploy:
   skip-cleanup: true
   on:
     tags: false
-    #branch: CI
+    condition: $NEW_BUILD = YES

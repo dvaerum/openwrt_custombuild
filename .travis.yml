@@ -15,6 +15,6 @@ deploy:
   file_glob: true
   file: images/*
   skip-cleanup: true
-  on:
-    tags: true
+#  on:
+#    tags: true
 #    condition: $NEW_BUILD = "Yes"

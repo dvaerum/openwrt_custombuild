@@ -14,7 +14,4 @@ deploy:
     secure: $GITHUB_TOKEN
   file_glob: true
   file: images/*
-  skip-cleanup: true
-#  on:
-#    tags: true
-#    condition: $NEW_BUILD = "Yes"
+  skip-cleanup: tru

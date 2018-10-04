@@ -31,5 +31,5 @@ if [ "$checksum" != "$tmp" ]; then
   git remote add origin-release "https://${GITHUB_TOKEN}@github.com/dvarum12/openwrt_custombuild" > /dev/null 2>&1
   git push --quiet --set-upstream origin-release master --tags
 
-  export NEW_BUILD=YES
+  export TRAVIS_TAG=true
 fi

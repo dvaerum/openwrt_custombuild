@@ -30,5 +30,5 @@ if [ "$checksum" != "$tmp" ]; then
   git push --quiet --set-upstream origin-release master
 
   git tag -a "$(date +%Y-%m-%d)" -m "new updated images"
-#  git push --quiet --set-upstream origin-release master --tags
+  git push --quiet --set-upstream origin-release master --tags
 fi

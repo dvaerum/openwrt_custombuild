@@ -1,5 +1,6 @@
 dist: trusty
 group: travis_latest
+language: generic
 
 install:
   - sudo apt-get -y update

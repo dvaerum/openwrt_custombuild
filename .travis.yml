@@ -15,4 +15,4 @@ deploy:
     secure: $GITHUB_TOKEN
   file_glob: true
   file: images/*
-  skip-cleanup: tru
+  skip-cleanup: true

@@ -1,1 +1,1 @@
-7320489f39920b8e95a9d5632bdf980f40c9e3a856501d115b67e01b07a8ac82 openwrt-imagebuilder-ar71xx-tiny.Linux-x86_64.tar.xz
+3ed127c0f516ea48eee0f880eac17887a357a5cbf7b07d15ff24ace732e873cf openwrt-imagebuilder-ar71xx-tiny.Linux-x86_64.tar.xz
